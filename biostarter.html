@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<!-- CSS Stylesheets with Relative Paths -->
+
+<html lang="en-us">
+<head>
+  <style>
+    .container {        
+      margin:10 auto;
+        padding:0px;
+
+  }
+  #main-bio {
+    Margin:30 auto;
+  			float: left;
+			width: 70%;
+  }
+  #contact-info {
+			      float: left;
+            width: 30%;
+            line-height: 1.5;
+  }
+  #bio-image {
+  			padding: 50px;
+        float: left;
+  			width: 200px;
+            margin: 10px; 
+
+  }
+  #figure {
+   position: relative;
+  	left: 0px;
+  }
+  #bio-name {
+   position: absolute;
+  	left: 80px;
+    top: 240px;
+  
+  }
+  body {background-color: #efeee7;
+  		font-family:"Georgia", Times New Roman, Times, serif;
+        color:#333333;
+        margin:0 auto;
+        padding:0px;
+        }
+  header {background-color: #333333;
+  }
+  h1 {text-align: center;
+             color: #eee;
+             font-size: 28px;
+             padding:10px;             
+
+             }
+  h2 { 
+             font-size: 24px;             
+
+             }
+  a {	color:#d21034;
+  }
+  p {
+    padding: 50px;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#333333;
+    font-family:"Georgia", Times New Roman, Times, serif;
+    color: white;
+    text-align: center;
+  }
+    </style>
+  <meta charset="UTF-8">
+  <title>CSS Stylesheets with Relative Paths</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1 font size="7" color="#eee">Student Bio</h1>
+  </header>
+
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <h2 id="bio-name">Sri Mantrala</h2>
+        <img id="bio-image" src="sri_pic.jpg" alt="Sriharitha Mantrala">
+      </section>
+      <p>Experienced Senior Business Specialist with a demonstrated history of working in the financial services industry. 
+        Skilled in Analytical Skills, Communication, Databases, Employee Training, and Data Analysis. Strong business 
+        development professional with a Master's degree focused in Information systems from George Mason University. </p>
+    </section>
+
+    <aside id="contact-info">
+      <h2>Contact Info</h2>
+      <table>
+        <tr>
+          <td><img src="email.png" width="50" height="50"alt="email_id"></td>
+          <td><strong>Email:</strong> <a href="mailto:kalaga.haritha@gmail.com">kalaga.haritha@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td><img src="github.png" width="50" height="50"alt="email_id"></td>
+          <td><strong>Github:</strong> <a href="https://github.com/smantrala1">smantrala1</a></td>
+        </tr>
+        <tr>
+          <td><img src="portfolio.png" width="50" height="50"alt="email_id"></td>
+          <td><strong>Portfolio:</strong> <a href="#">coming soon</a></td>
+        </tr>
+      </table>
+    </aside>
+  </main>
+<div class="footer">
+  <br>
+  Never stop doing your BEST just because someone doesn't give you credit!
+  <br>
+  <br>
+</div>
+</body>
+
+</html>
